@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import Maze from "./maze";
 import Pacman from "./pacman";
 import Ghost from "./ghost";
+import BackgroundMusic from "./music";
+
 
 const GRID_WIDTH = 13;
 const GRID_HEIGHT = 9;
@@ -106,6 +108,7 @@ function GameLogic() {
 
   return (
     <div className="game-container">
+      <BackgroundMusic src="/arcade.mp3" />
       {!gameStarted ? (
         <div className="start-screen">
           <h1>WELCOME TO PAC-MAN</h1>
@@ -152,7 +155,7 @@ function GameLogic() {
               <button onClick={restartGame}>Restart</button>
             </div>
           )}
-          
+
           {gameWon && (
             <div className="game-won">
               <h2>You Win!</h2>

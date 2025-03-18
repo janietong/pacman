@@ -187,3 +187,24 @@
 .game-won button:hover {
     background-color: #A21B69;
 }
+
+.music-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .music-button {
+    background-color: #ffcc00;
+    color: black;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Press Start';
+  }
+  
+  .music-button:hover {
+    background-color: #ff6600;
+  }
+  
